@@ -65,7 +65,7 @@ public class GameManager : MonoBehaviour {
 
 	void OnPlayerScored(){
 	
-		_score++;
+		score++;
 		scoreText.text = _score;
 	}
 
