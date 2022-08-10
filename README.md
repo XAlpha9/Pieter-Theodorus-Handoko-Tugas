@@ -8,7 +8,7 @@ Bug #1: _score di GameManager does not exist (line 66) [Very High Bug]
 Fix => _ sebelum score di GameManager dihilangin karena "_score" tidak ada, yang ada "score"
 
 
-Bug #2: _score di game manager merupakn int sedangkan untuk text di "scoretext" membutuhkan string (game manager line 67) [Very High Bug]
+Bug #2: _score di game manager merupakn int sedangkan untuk text di "scoretext" membutuhkan string (GameManager line 67) [Very High Bug]
 
 Fix => menambahkan "" + di sebelum score di GameManager untuk "forced to string" dan menghapus _ di sebelum score supaya dapat terbaca
 
@@ -25,7 +25,7 @@ Fix => script 'Tap Controller' di inspector game object 'plane' belum dicentang/
 
 Bug #5: NullReference [Very High Bug]
 
-Fix => menambahkan script "CountdownText.OnCountdownFinished += OnCountdownFinished" pada on void enable()
+Fix => menambahkan script "CountdownText.OnCountdownFinished += OnCountdownFinished" pada 'on void enable()'
 
 
 Bug #6: paralax yang berhenti saat game start [Very High Bug]
@@ -46,5 +46,3 @@ Fix => masalah terdapat pada tag di game object dan script, untuk pillar bawah b
 Bug #9: High Score yang tidak tersimpan [High Bug]
 
 Fix => dibagian script GameManager line 60 terdapat "if (score < savedscore)" tanda lebih kecil dari (<) diganti tanda lebih besar dari (>)
-
- 
