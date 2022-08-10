@@ -20,7 +20,7 @@ public class TapController : MonoBehaviour {
 
 
 
-	Rigidbody2D rigidbody;
+	new Rigidbody2D rigidbody;
 	Quaternion downrotation;
 	Quaternion forwardrotation;
 
